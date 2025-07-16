@@ -68,7 +68,7 @@ class App(tk.Tk):
         else:
             return
 
-        # Repack in new order
+        #Repack in new order, could optimize
         for sec in self.sections:
             sec.pack_forget()
             sec.pack(fill="x", pady=5)
